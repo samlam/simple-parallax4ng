@@ -6,6 +6,6 @@ export class SimpleParallax4ngPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('simple-app div h1')).getText();
   }
 }

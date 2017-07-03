@@ -1,20 +1,48 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./dist/lib",
     "baseUrl": "src",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
+    "module": "commonjs",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noEmitOnError": false,
+    "noImplicitAny": false,
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
     ],
+    "types":[
+      "node",
+      "systemjs"
+    ],
     "lib": [
       "es2016",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@types/*": [
+        "../node_modules/@types/*"
+      ]
+    }
+  },
+  "include":[
+    //"./src/app/simple-parallax/simple-parallax.module.ts"
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./src/test.ts",
+    "./src/typings.d.ts",
+    "**/*.spec.ts",
+    "./node_modules"
+  ],
+  "angularCompilerOptions":{
+    "skipTemplateCodegen": true,
+    "skipMetadataEmit" : false,
+    "debug": true,
+    "trace": true
   }
 }
