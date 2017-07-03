@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/samlam/simple-parallax4ng.svg?branch=master)](https://travis-ci.org/samlam/simple-parallax4ng)
+
 # simple-parallax4ng
 
 create a simple parallax background effect; designed to be consumed by Angular with Typescript applications
