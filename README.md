@@ -1,4 +1,4 @@
-# SimpleParallax4ng
+# simple-parallax4ng
 
 create a simple parallax background effect; designed to be consumed by Angular with Typescript applications
 
